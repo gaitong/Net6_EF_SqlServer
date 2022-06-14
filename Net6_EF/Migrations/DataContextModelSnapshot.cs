@@ -22,7 +22,7 @@ namespace Net6_EF.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("Net6_EF.Cryto", b =>
+            modelBuilder.Entity("Net6_EF.Crypto", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -38,7 +38,7 @@ namespace Net6_EF.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Crytos");
+                    b.ToTable("Crypto");
                 });
 #pragma warning restore 612, 618
         }

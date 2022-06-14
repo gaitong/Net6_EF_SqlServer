@@ -12,7 +12,7 @@ using Net6_EF;
 namespace Net6_EF.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20220613144319_Initial")]
+    [Migration("20220614142132_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,7 +24,7 @@ namespace Net6_EF.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("Net6_EF.Cryto", b =>
+            modelBuilder.Entity("Net6_EF.Crypto", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -40,7 +40,7 @@ namespace Net6_EF.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Crytos");
+                    b.ToTable("Crypto");
                 });
 #pragma warning restore 612, 618
         }

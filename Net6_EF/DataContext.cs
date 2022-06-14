@@ -13,6 +13,6 @@ namespace Net6_EF
         {
         }
 
-        public DbSet<Crypto> Crytos { get; set; }
+        public DbSet<Crypto> Crypto { get; set; }
     }
 }

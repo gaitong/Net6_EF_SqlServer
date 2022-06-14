@@ -9,7 +9,7 @@ namespace Net6_EF.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Crytos",
+                name: "Crypto",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -19,14 +19,14 @@ namespace Net6_EF.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Crytos", x => x.Id);
+                    table.PrimaryKey("PK_Crypto", x => x.Id);
                 });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Crytos");
+                name: "Crypto");
         }
     }
 }

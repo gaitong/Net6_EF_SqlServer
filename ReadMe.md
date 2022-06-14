@@ -19,15 +19,15 @@ public class DataContext : DbContext
         {
         }
 
-        public DbSet<Cryto> Crytos { get; set; }
+        public DbSet<Crypto> Crypto { get; set; }
     }
 ```
 
 	
 2.เพิ่ม appsetting
 ```sh
-  "ConnectionStrings": {
-    "ConnectionString": "Server=(localdb)\\MSSQLLocalDB;Database=Cryto;User Id=sa;Password=P@ssw0rd;"
+"ConnectionStrings": {
+    "ConnectionString": "Server=(localdb)\\MSSQLLocalDB;Database=Crypto;User Id=sa;Password=P@ssw0rd;"
   }
 ```
 
@@ -50,4 +50,4 @@ dotnet ef migrations add Initial
 ```sh
 dotnet ef database update
 ```
-**สามารถ เรียกใช้ DataContext โดยการ dependency inject เข้าไปใน controller
+**สามารถ เรียกใช้ DataContext โดยการ dependency injection เข้าไปใน controller
